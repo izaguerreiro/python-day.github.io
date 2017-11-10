@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0066ff;
+    color: #fff;
+    font-family: "Open Sans"
+}
+
+#header {
+    text-align: center;
+    width: 100%;
+}
+
+#header img {
+    margin: 200px;
+    width: 512px !important;
+}
+
+#description {
+    width: 100%;
+    text-align: center;
+}
+
+#description h1 {
+    font-size: 48px;
+}
