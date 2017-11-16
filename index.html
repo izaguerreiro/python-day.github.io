@@ -1,17 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Python Day - Polo da Anhanguera de Pindamonhangaba</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Python Day na Anhanguera de Pindamonhangaba</title>
+	<link rel="stylesheet" href="">
+	<script src="/assets/js/jquery-1.11.1.min.js"></script>
 
-        <link rel="stylesheet" href="/assets/css/style.css">
-    </head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/uikit.min.css" />
+	
+	<script src="/assets/js/uikit.min.js"></script>
+	<script src="/assets/js/uikit-icons.min.js"></script>
+
+	<script>
+		$(function(){
+			$('.parallax').each(function(){
+				var $obj = $(this);
+				 
+				$(window).scroll(function() {
+					var yPos = -($(window).scrollTop() / $obj.data('speed'));			 
+					var bgpos = '50% '+ yPos + 'px';			 
+					$obj.css('background-position', bgpos );		 
+				});
+
+			});
+		});
+	</script>
+</head>
 <body>
-    <div id="header">
-        <img src="/assets/images/logo.svg">
-    </div>
+	<section id="home" class="parallax" data-speed="5">
+		<article>
+			<header>
+				<img src="/assets/images/logo.svg">
+				<p>
+					Python é uma linguagem de programação robusta e com uma curva de aprendizagem baixa que está ganhando
+					espaço no mercado nacional em diversas áreas.
+				</p>
 
-    <div id="description">
-        
-    </div>
+				<a class="uk-button uk-button-primary" href="">Inscreva-se</a>
+			</header>
+		</article>
+	</section>
+
+	<section id="portfolio" class="parallax" data-speed="1">
+		<article>
+			<header>
+				<h1>Organizadores</h1>
+			</header>
+			<ul>
+				<li>
+					<a href="">
+						<img src="http://placehold.it/200x200" alt="">
+					</a>
+					<br />
+					Nome do Organizador
+				</li>
+				<li>
+					<a href="">
+						<img src="http://placehold.it/200x200" alt="">
+					</a>
+					<br />
+					Nome do Organizador
+				</li>
+				<li>
+					<a href="">
+						<img src="http://placehold.it/200x200" alt="">
+					</a>
+					<br />
+					Nome do Organizador
+				</li>
+				<li>
+					<a href="">
+						<img src="http://placehold.it/200x200" alt="">
+					</a>
+					<br />
+					Nome do Organizador
+				</li>
+			</ul>
+		</article>
+	</section>
+
+	<section id="portfolio" class="parallax" data-speed="1">
+			<article>
+				<header>
+					<h1>Cronograma</h1>
+				</header>
+				<ul>
+	
+				</ul>
+			</article>
+		</section>
+	
+
+	<section id="localization" class="parallax" data-speed="1">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.3232265420393!2d-45.46159995201929!3d-22.955928879401856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc38f23df4ad70646!2sFaculdade+Anhanguera+de+Pindamonhangaba!5e0!3m2!1spt-BR!2sbr!4v1510838496596" 
+			frameborder="0" style="border:0; height: 100%; width: 100%;" allowfullscreen></iframe>
+	</section>
+
+	<section id="footer" class="parallax" data-speed="1">
+			<article style="width: 100%;">
+
+			</article>
+	</section>
+
 </body>
+</html>
+
+<!--
+
+						<header>
+						<h1>Localização</h1>
+					</header>
+					<ul style="height: 100%;">
+							
+					</ul>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.3232265420393!2d-45.46159995201929!3d-22.955928879401856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc38f23df4ad70646!2sFaculdade+Anhanguera+de+Pindamonhangaba!5e0!3m2!1spt-BR!2sbr!4v1510838496596" 
+	frameborder="0" style="border:0; height: 450px; width: 100%;" allowfullscreen></iframe>
+-->
